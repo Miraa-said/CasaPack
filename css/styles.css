@@ -1,5 +1,5 @@
 :root{
-    --pink:#e84393;
+    --gold:#9E6E42;
 }
 *{
     margin:0; padding:0;
@@ -27,18 +27,18 @@ padding: 2rem 9%;
     color:#333;
     padding: 1rem;
     margin: 2rem 0;
-    background: rgba(255, 51, 153,.05);
+    background: rgba(187, 198, 234, 0.26);
 }
 
 .heading span{
-color:var(--pink);
+color:var(--gold);
 }
 
 .btn{
     display: inline-block;
     margin-top: 1rem;
     border-radius: 5rem;
-    background: #333;
+    background: #233051;
     color: #fff;
     padding: .9rem 3.5rem;
     cursor: pointer;
@@ -46,7 +46,7 @@ color:var(--pink);
 }
 
 .btn:hover{
-    background: var(--pink);
+    background: var(--gold);
 }
 
 header{
@@ -63,12 +63,18 @@ header{
 
 header .logo{
 font-size: 3rem;
-color:#333;
+color:#233051;
 font-weight: bolder;
 }
 
 header .logo span{
-    color:var(--pink);
+    color:var(--gold);
+}
+
+header .logo img {
+    width: 200px;
+    height: auto;
+    display: block;
 }
 
 header .navbar a{
@@ -78,7 +84,7 @@ header .navbar a{
 }
 
 header .navbar a:hover{
-    color:var(--pink);
+    color:var(--gold);
 }
 
 header .icons a{
@@ -88,7 +94,7 @@ header .icons a{
 }
 
 header .icons a:hover{
-    color:var(--pink);
+    color:var(--gold);
 }
 
 header #toggler{
@@ -109,7 +115,7 @@ header .fa-bars{
     display: flex;
     align-items: center;
     min-height: 100vh;
-    background: url(../images/cover.png) no-repeat;
+    background: url(../images/cover3.png) no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -124,7 +130,7 @@ header .fa-bars{
 
 .home .content span{
     font-size: 3.5rem;
-    color:var(--pink);
+    color:var(--gold);
     padding: 1rem 0;
     line-height: 1.5;
 }
