@@ -585,6 +585,24 @@ section{
     font-size: 50%;
 }
 
+.home {
+        background-image: url(../images/newcover.jpg);
+        background-position: center;
+        background-size: contain;
+        min-height: auto;
+        padding-bottom: 2rem;
+    }
+
+    .home::after {
+        content: "";
+        display: block;
+        width: 85%;
+        height: 250px;
+        margin: 2rem auto 0;
+        
+    }
+
+
 .heading{
     font-size: 3rem;
 }
