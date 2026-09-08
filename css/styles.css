@@ -473,7 +473,7 @@ resize: none;
 .footer .box-container{
     display: flex;
     flex-wrap: wrap;
-    gap: 1.4rem;
+    gap: 1rem;
 }
 
 .footer .box-container .box{
