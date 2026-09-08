@@ -113,7 +113,7 @@ header .fa-bars{
     display: flex;
     align-items: center;
     min-height: 100vh;
-    background: url(../images/cover3.png) no-repeat;
+    background: url(../images/newcover2.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -538,7 +538,7 @@ section{
 
 }
 
-@media (max-width:768px) {
+@media (max-width:991px) {
     header .fa-bars{
         display: block;
     }
