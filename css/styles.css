@@ -112,8 +112,8 @@ header .fa-bars{
 .home{
     display: flex;
     align-items: center;
-    min-height: 100vh;
-    background: url(../images/newcover2.jpg) no-repeat;
+    min-height: 120vh;
+    background: url(../images/coverlaptop.png) no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -128,14 +128,14 @@ header .fa-bars{
 
 .home .content span{
     font-size: 3.5rem;
-    color:var(--gold);
+    color:#233051;
     padding: 1rem 0;
     line-height: 1.5;
 }
 
 .home .content p{
     font-size: 1.5rem;
-    color:#999;
+    color:#090909;
     padding: 1rem 0;
     line-height: 1.5;
 }
@@ -420,11 +420,27 @@ border:.1rem solid rgba(0,0,0,.1);
 background: #fff;
 border-radius: .5rem;
 }
-.contact .row .image{
+.contact .row .image {
     flex: 1 1 40rem;
+    text-align: center;
+    padding: 1rem;
 }
-.contact .row .image img{
-    width: 100%;
+
+.contact .row .image img {
+    width: 80%;
+    max-width: 45rem;
+    border-radius: 1.5rem;
+    box-shadow: 
+        0 1rem 2.5rem rgba(35, 48, 81, 0.18),
+        0 0 0 .5rem rgba(158, 110, 66, 0.08);
+    transition: .3s ease;
+}
+
+.contact .row .image img:hover {
+    transform: translateY(-5px);
+    box-shadow: 
+        0 1.5rem 3rem rgba(35, 48, 81, 0.25),
+        0 0 0 .7rem rgba(158, 110, 66, 0.12);
 }
 .contact .row form .box{
     padding: 1rem;
@@ -536,9 +552,15 @@ section{
     background-position: left;
 }
 
+header .logo img {
+    width: 180px;
+    height: auto;
+    display: block;
 }
 
-@media (max-width:991px) {
+}
+
+@media (max-width:768px) {
     header .fa-bars{
         display: block;
     }
@@ -584,25 +606,6 @@ section{
     html{
     font-size: 50%;
 }
-
-.home {
-        background-image: url(../images/newcover.jpg);
-        background-position: center;
-        background-size: contain;
-        min-height: auto;
-        padding-bottom: 2rem;
-    }
-
-    .home::after {
-        content: "";
-        display: block;
-        width: 85%;
-        height: 250px;
-        margin: 2rem auto 0;
-        
-    }
-
-
 .heading{
     font-size: 3rem;
 }
