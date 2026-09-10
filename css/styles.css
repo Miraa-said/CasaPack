@@ -533,23 +533,48 @@ resize: none;
 .footer .credit span{
     color:var(--gold);
 }
-/* media queries */
-@media (max-width:991px) {
-
-    html{
+/* media queries */ 
+@media (max-width:991px) 
+{ html{ 
     font-size: 55%;
+ } 
+header{ 
+    padding: 2rem; 
+} 
+section{ 
+    padding: 2rem; 
+} 
+.home{ 
+    min-height: 50vh;
+        height: auto;
+        margin: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        background-position: left center;
+        background-size: contain;
+} 
+.home .content{ 
+    max-width: 50rem; 
+} 
+.home .content h3{ 
+    font-size: 6rem; 
+    color:#333; 
+} 
+.home .content span{ 
+    font-size: 3.5rem; 
+    color:#233051; 
+    padding: 1rem 0; 
+    line-height: 1.5; 
+} 
+.home .content p{ 
+    font-size: 1.5rem; 
+    color:#090909; 
+    padding: 1rem 0; 
+    line-height: 1.5; 
 }
 
-header{
-    padding: 2rem;
-}
-
-section{
-    padding: 2rem;
-}
-
-.home{
-    background-position: left;
+.about {
+    margin-top: -10rem;
 }
 
 header .logo img {
@@ -610,4 +635,40 @@ header .logo img {
     font-size: 3rem;
 }
 
+}
+
+/* Phone landscape - make Home look like laptop */
+@media (max-width: 991px) and (orientation: landscape) {
+
+    .home {
+        min-height: 120vh;
+        height: auto;
+        padding: 2rem 9%;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .home .content {
+        max-width: 50rem;
+    }
+
+    .home .content h3 {
+        font-size: 6rem;
+    }
+
+    .home .content span {
+        font-size: 3.5rem;
+        padding: 1rem 0;
+        line-height: 1.5;
+    }
+
+    .home .content p {
+        font-size: 1.5rem;
+        padding: 1rem 0;
+        line-height: 1.5;
+    }
+
+    .about {
+    margin-top: 0rem;
+}
 }
